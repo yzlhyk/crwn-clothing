@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
-import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
+import ShopPage from './pages/shop/shop.component';
+import { Routes, Route} from 'react-router-dom';
 
 // const HomePage = () => {
 //   let navigate = useNavigate();
@@ -51,29 +52,12 @@ import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
 //   )
 // }
 
-const HatsPage = () => {
-  return (
-    <div>
-      <h1>HATS PAGE</h1>
-    </div>
-  )
-}
-
-const JacketsPage = () => {
-  return (
-    <div>
-      <h1>JACKETS PAGE</h1>
-    </div>
-  )
-}
-
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/hats' element={<HatsPage />} />
-        <Route path='/jackets' element={<JacketsPage />} />
+        <Route path='/shop' element={<ShopPage />} />
         {/* <Route path='/topics/*' element={<TopicsList />} /> */}
       </Routes>
     </div>
